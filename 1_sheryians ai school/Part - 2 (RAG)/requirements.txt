@@ -37,6 +37,8 @@ python-dotenv
 pandas
 numpy
 
+crawl4ai
+
 # API / App Layer (optional but common in RAG apps)
 
 fastapi
