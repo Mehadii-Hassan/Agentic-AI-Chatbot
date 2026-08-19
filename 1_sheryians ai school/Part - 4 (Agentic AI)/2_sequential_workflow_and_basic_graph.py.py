@@ -1,13 +1,6 @@
 import os
 from typing import TypedDict
 
-# create the state
-class pipelinestate(TypedDict):
-    raw_input : str
-    edited_text : str
-    script_text : str
-    final_output : str 
-
 
 # define llm
 from langchain_groq import ChatGroq
@@ -18,6 +11,14 @@ llm = ChatGroq(
     model = "llama-3.1-8b-instant",
     temperature = 0.7
 )
+
+
+# create the state
+class pipelinestate(TypedDict):
+    raw_input : str
+    edited_text : str
+    script_text : str
+    final_output : str 
 
 
 # create node
