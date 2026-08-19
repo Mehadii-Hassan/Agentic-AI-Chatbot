@@ -191,7 +191,7 @@ graph.add_conditional_edges(
     "reviewer", should_stop_looping
 )
 
-graph.compile()
+app = graph.compile()
 
 
 
