@@ -6,9 +6,9 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import interrupt, Command
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
+load_dotenv() 
 
 
-load_dotenv()
 
 # writer llm
 writer_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
